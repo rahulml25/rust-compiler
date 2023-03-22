@@ -7,7 +7,7 @@ async function compileCode(code: string) {
   const compilerDir = "./compiler";
   const filepath = `${compilerDir}/src/main.rs`;
 
-  fs.writeFileSync(path.resolve(filepath), code);
+#  fs.writeFileSync(path.resolve(filepath), code);
 
   const cmd = `cd ${compilerDir}; cargo run`;
 
